@@ -1,4 +1,6 @@
-## Complete Intro to React, v9 Course
+## Front end masters -- Complete Intro to React, v9 Course
+
+Brushing up on React for interview prep.
 
 This is a companion repository for the [Complete Intro to React, v9][fem] course on Frontend Masters.
 [![Frontend Masters](https://static.frontendmasters.com/assets/brand/logos/full.png)][fem]
