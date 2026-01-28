@@ -26,6 +26,12 @@ To use the version of node this course was built with:
 
 Please file issues and open pull requests on [the course website repo][repo]. Feel free to open pull requests here, but the issues should go in the other repo.
 
+## Course Overview Notes
+
+    - 01 - Setting up react without a build pipeline.
+        - Setup script tags to import React and ReactDOM packages from unpkg.com
+        - Then go over the basics of grabbing an element from the dom and providing it ReactDOM to handle rendering.
+
 ## License
 
 The content of this workshop is licensed under CC-BY-NC-4.0. Feel free to share freely but do not resell my content.
