@@ -28,9 +28,34 @@ Please file issues and open pull requests on [the course website repo][repo]. Fe
 
 ## Course Overview Notes
 
+Course guide: https://react-v9.holt.courses
+
     - 01 - Setting up react without a build pipeline.
         - Setup script tags to import React and ReactDOM packages from unpkg.com
         - Then go over the basics of grabbing an element from the dom and providing it ReactDOM to handle rendering.
+    - 02 - Overivew of some useful JS/React tools
+        - npm init - discussing setting up and using npm.
+        - Prettier - formats code for you so you don't have to worry about it.
+            - create a .prettier.rc to create a prettier config.
+            - He uses an empty object in his config which means use the defaults.
+            - VS Code Setup
+                - Install prettier VS Code extension.
+                - In settigs check 'format on save'
+            - Project setup
+                - This allows for devs without VS Code to run prettier easily.
+                - Install with: `npm i prettier --save-dev`
+                - In the package.json's scripts section add `"format": "prettier --write \"src/**/*.{js,jsx,css,html}\""`
+                - Then to run: `npm run format`
+        - ESLint
+            - His philosophy is to only setup linting for really bad bugs.
+            - Linting is more of enforcing opinions ( i.e. alphabetical imports  )
+        - git
+        - vite
+            - Pronounced veet. French for quick.
+            - Bundling tool created by the Vue team that is a Wrapper around Rollup.
+    - 03 - JSX
+        - It's a syntax extension for JS that lets you write html like code in your JS files.
+        - It gets converted to the React.createElement function calls
 
 ## License
 
@@ -42,4 +67,3 @@ The code, including the code of the site itself and the code in the exercises, a
 [repo]: https://github.com/btholt/complete-intro-to-react-v9
 
 [React icons created by Pixel perfect - Flaticon](https://www.flaticon.com/free-icons/react)
-
