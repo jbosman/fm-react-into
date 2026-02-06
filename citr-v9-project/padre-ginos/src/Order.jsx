@@ -10,7 +10,21 @@ export default function Order(){
     const [cart, setCart] = useState([]);
     const [loading, setLoading] = useState(true);
 
-    let price, displayPrice, selectedPizza;
+    async function checkout(){
+        setLoading(true);
+        await fetch("/api/order",
+        {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify({cart})
+        });
+        setCart([]);
+        setLoading(false);
+    }
+
+    let price, selectedPizza;
 
     const intl = new Intl.NumberFormat(
         "en-US", 
@@ -22,8 +36,7 @@ export default function Order(){
 
     if(!loading){
         selectedPizza = pizzaTypes.find((pizza) => pizzaType === pizza.id);
-        price = selectedPizza.sizes[pizzaSize];
-        displayPrice = intl.format(price);
+        price = intl.format(selectedPizza.sizes[pizzaSize]);
     }
 
     async function fetchPizzaType(){
@@ -37,6 +50,7 @@ export default function Order(){
     useEffect(() => { fetchPizzaType(); }, [])
 
     return (
+        <div className='order-page'>
         <div className="order">
             <h2>Create Order</h2>
             <form onSubmit={ (e)=>{
@@ -46,8 +60,7 @@ export default function Order(){
                         { 
                             pizza: selectedPizza, 
                             size: pizzaSize, 
-                            price,
-                            displayPrice
+                            price
                         }
                     ]);
                 }}
@@ -108,14 +121,15 @@ export default function Order(){
                                 description={ selectedPizza.description}
                                 image={selectedPizza.image}
                             />
-                            <p>{displayPrice}</p>
+                            <p>{price}</p>
                         </div>
                     )
                 }
             </form>
-            {
-                loading ? <h2>Loading...</h2> : <Cart cart={cart} />
-            }
+        </div>
+        {
+            loading ? <h2>Loading...</h2> : <Cart cart={cart} checkout={checkout} />
+        }
         </div>
     )
 }
