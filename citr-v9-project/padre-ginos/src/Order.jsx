@@ -3,6 +3,8 @@ import { useState, useEffect } from 'react';
 import Pizza from "./Pizza";
 import Cart from './Cart';
 
+import { transformToCurrency } from './internationalizationFormatter';
+
 export default function Order(){
     const [pizzaTypes, setPizzaTypes] = useState([]);
     const [pizzaType, setPizzaType] = useState('pepperoni');
@@ -26,17 +28,9 @@ export default function Order(){
 
     let price, selectedPizza;
 
-    const intl = new Intl.NumberFormat(
-        "en-US", 
-        {
-            style: "currency",
-            currency: "USD"
-        }
-    );
-
     if(!loading){
         selectedPizza = pizzaTypes.find((pizza) => pizzaType === pizza.id);
-        price = intl.format(selectedPizza.sizes[pizzaSize]);
+        price = transformToCurrency(selectedPizza.sizes[pizzaSize]);
     }
 
     async function fetchPizzaType(){
