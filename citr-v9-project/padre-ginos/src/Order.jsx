@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react';
 import Pizza from "./Pizza";
 import Cart from './Cart';
 
-import { transformToCurrency } from './internationalizationFormatter';
+import { formatCurrency } from './currencyFormatter';
 
 export default function Order(){
     const [pizzaTypes, setPizzaTypes] = useState([]);
@@ -30,7 +30,7 @@ export default function Order(){
 
     if(!loading){
         selectedPizza = pizzaTypes.find((pizza) => pizzaType === pizza.id);
-        price = transformToCurrency(selectedPizza.sizes[pizzaSize]);
+        price = formatCurrency(selectedPizza.sizes[pizzaSize]);
     }
 
     async function fetchPizzaType(){

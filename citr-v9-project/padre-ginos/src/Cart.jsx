@@ -1,4 +1,4 @@
-import { transformToCurrency } from './internationalizationFormatter';
+import { formatCurrency } from './currencyFormatter';
 
 function Cart({ cart, checkout }){
   let total = cart.reduce((acc, current) => {
@@ -19,7 +19,7 @@ function Cart({ cart, checkout }){
           ))
         }
       </ul>
-      <p>Total: {transformToCurrency(total)}</p>
+      <p>Total: {formatCurrency(total)}</p>
       <button onClick={checkout}>Checkout</button>    
     </div>
   )

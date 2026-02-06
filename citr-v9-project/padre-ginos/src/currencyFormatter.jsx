@@ -6,7 +6,7 @@ const intl = new Intl.NumberFormat(
     }
 );
 
-export function transformToCurrency(number){
-    return intl.format(number);
+export function formatCurrency(value){
+    return intl.format(value);
 }
 
