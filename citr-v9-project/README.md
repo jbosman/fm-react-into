@@ -63,6 +63,8 @@ Course guide: https://react-v9.holt.courses
     - 10 Client Side API Calls
         - Tanstack Query
             - Simplifies logic for client side caching and errors.
+    - 11 Modals
+        - How to setup a modal in a react app.
 
 ## License
 
