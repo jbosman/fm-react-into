@@ -60,6 +60,9 @@ Course guide: https://react-v9.holt.courses
         - Hooks: state, effects, custom hooks, context
     - 09 Client Side Routing
         - Tanstack Routing
+    - 10 Client Side API Calls
+        - Tanstack Query
+            - Simplifies logic for client side caching and errors.
 
 ## License
 
