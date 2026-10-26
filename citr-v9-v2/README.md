@@ -42,3 +42,4 @@ Course guide: https://react-v9.holt.courses
     - 01 - Setting up react without a build pipeline.
         - Setup script tags to import React and ReactDOM packages from unpkg.com
         - Then go over the basics of grabbing an element from the dom and providing it ReactDOM to handle rendering.
+        - Went over how to use React.createComponent to build components.
