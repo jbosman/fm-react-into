@@ -51,3 +51,5 @@ Course guide: https://react-v9.holt.courses
             - Setup format on save ( vs code: command + comma --> format on save )
         - ESlint - Enforce/disallow certain coding patterns/usage
             - Focuses on semantics, syntax, and code content.
+        - Git
+            - .gitignore - files you don't want to git to upload to the repo
