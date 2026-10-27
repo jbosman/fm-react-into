@@ -43,3 +43,11 @@ Course guide: https://react-v9.holt.courses
         - Setup script tags to import React and ReactDOM packages from unpkg.com
         - Then go over the basics of grabbing an element from the dom and providing it ReactDOM to handle rendering.
         - Went over how to use React.createComponent to build components.
+    - 02 - Overivew of some useful JS/React tools
+        - npm - package manager for node.js
+         - npm init - creates package.json for managing dependencies
+        - prettier - code formatter for white space and formatting
+            - Allow prettier to worry about code conventions.
+            - Setup format on save ( vs code: command + comma --> format on save )
+        - ESlint - Enforce/disallow certain coding patterns/usage
+            - Focuses on semantics, syntax, and code content.
