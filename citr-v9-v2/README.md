@@ -53,3 +53,8 @@ Course guide: https://react-v9.holt.courses
             - Focuses on semantics, syntax, and code content.
         - Git
             - .gitignore - files you don't want to git to upload to the repo
+        - Vite ( French for quick )
+            - Uses rollup for bundling files.
+    - 03 - JSX
+        - It's a syntax extension for JS that lets you write html like code in your JS files.
+        - It gets converted to the React.createElement function calls
