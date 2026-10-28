@@ -6,8 +6,8 @@ const App = () => {
   return (
     <div>
       <h1>Padre Ginos</h1>
-      <Pizza name="Pepperoni Pizza" description="Yummy pepperoni pizza." />
-      <Pizza name="Americano Pizza" description="French fries and hot dogs" />
+      <Pizza name="Pepperoni" description="Yummy pepperoni pizza." />
+      <Pizza name="Americano" description="French fries and hot dogs" />
       <Pizza name="Hawaiian" description="pineapple and ham" />
     </div>
   );
