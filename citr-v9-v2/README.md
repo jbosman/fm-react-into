@@ -60,3 +60,5 @@ Course guide: https://react-v9.holt.courses
         - It gets converted to the React.createElement function calls
     - 04 to 08 React utilities
         - Hooks: state, effects, custom hooks, context
+    - 09 Client Side Routing
+        - Tanstack Routing
