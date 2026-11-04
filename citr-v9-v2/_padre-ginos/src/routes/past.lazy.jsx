@@ -13,8 +13,6 @@ function PastOrdersRoute(){
     staleTime: 30000
   });
 
-  console.log(isLoading, data)
-
   if(isLoading){
     return (
       <div className='past-orders'>
