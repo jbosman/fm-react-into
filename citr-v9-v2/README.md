@@ -64,3 +64,5 @@ Course guide: https://react-v9.holt.courses
         - Tanstack Routing
     - 10 Client Side API Calls
         - Tanstack Query
+    - 11 Modals
+        - How to setup a modal in a react app.
