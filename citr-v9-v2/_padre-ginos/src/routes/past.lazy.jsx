@@ -3,9 +3,9 @@ import { useQuery } from '@tanstack/react-query';
 import { createLazyFileRoute } from '@tanstack/react-router';
 import getPastOrders from '../api/getPastOrders';
 
-export const Route = createLazyFileRoute('/past')({ component: PastOrdersRoute });
+export const Route = createLazyFileRoute('/past')({ component: PastOrders });
 
-function PastOrdersRoute(){
+function PastOrders(){
   const [page, setPage] = useState(1);
   const { isLoading, data } = useQuery({
     queryKey: ["past-orders", page ],
