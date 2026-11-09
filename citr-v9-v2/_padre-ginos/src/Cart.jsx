@@ -1,4 +1,4 @@
-const intl = new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' });
+import { formatPrice } from "./utils/index";
 
 export default function Cart({cart, checkout}){
     let total = cart.reduce((acc, item) => acc + item.pizza.sizes[item.size], 0);
@@ -22,7 +22,7 @@ export default function Cart({cart, checkout}){
                                 <tr key={index}>
                                     <td className="size">{item.size}</td>
                                     <td className="type">{item.pizza.name}</td>
-                                    <td className="price">{item.price}</td>
+                                    <td className="price">{formatPrice(item.price)}</td>
                                 </tr>
                             ))}
                         </tbody>
@@ -30,7 +30,7 @@ export default function Cart({cart, checkout}){
                 )
                 : <span>( Empty )</span>
             }
-            <p>Total: {intl.format(total)}</p>
+            <p>Total: {formatPrice(total)}</p>
             <button onClick={checkout}>Checkout</button>
         </div> 
     )
