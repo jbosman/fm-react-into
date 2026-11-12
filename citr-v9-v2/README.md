@@ -66,3 +66,6 @@ Course guide: https://react-v9.holt.courses
         - Tanstack Query
     - 11 Modals
         - How to setup a modal in a react app.
+    - Error Boundaries
+        - Requires using class components if you want to write your own.
+        - Best practice is to use the library react-error-boundary written by a previous member of the react team.
