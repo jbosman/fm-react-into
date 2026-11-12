@@ -71,3 +71,4 @@ Course guide: https://react-v9.holt.courses
         - Best practice is to use the library react-error-boundary written by a previous member of the react team.
     - 13 - Controlled Forms
     - 14 - Unit testing with Vitest
+        - Mocking with vitest-fetch-mock
