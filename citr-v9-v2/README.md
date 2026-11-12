@@ -58,14 +58,16 @@ Course guide: https://react-v9.holt.courses
     - 03 - JSX
         - It's a syntax extension for JS that lets you write html like code in your JS files.
         - It gets converted to the React.createElement function calls
-    - 04 to 08 React utilities
+    - 04 to 08 - React utilities
         - Hooks: state, effects, custom hooks, context
-    - 09 Client Side Routing
+    - 09 - Client Side Routing
         - Tanstack Routing
-    - 10 Client Side API Calls
+    - 10 - Client Side API Calls
         - Tanstack Query
-    - 11 Modals
+    - 11 - Modals
         - How to setup a modal in a react app.
-    - Error Boundaries
+    - 12 - Error Boundaries
         - Requires using class components if you want to write your own.
         - Best practice is to use the library react-error-boundary written by a previous member of the react team.
+    - 13 - Controlled Forms
+        -
