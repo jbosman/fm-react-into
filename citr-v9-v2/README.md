@@ -70,4 +70,4 @@ Course guide: https://react-v9.holt.courses
         - Requires using class components if you want to write your own.
         - Best practice is to use the library react-error-boundary written by a previous member of the react team.
     - 13 - Controlled Forms
-        -
+    - 14 - Unit testing with Vitest
