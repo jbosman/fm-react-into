@@ -72,3 +72,5 @@ Course guide: https://react-v9.holt.courses
     - 13 - Controlled Forms
     - 14 - Unit testing with Vitest
         - Mocking with vitest-fetch-mock
+        - Testing use hooks
+        - Snapshot testing; Low confidence and not highly recommended.
