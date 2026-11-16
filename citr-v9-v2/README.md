@@ -74,3 +74,4 @@ Course guide: https://react-v9.holt.courses
         - Mocking with vitest-fetch-mock
         - Testing use hooks
         - Snapshot testing; Low confidence and not highly recommended.
+        - How to generate a test coverage report.
