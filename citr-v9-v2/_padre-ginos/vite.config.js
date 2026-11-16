@@ -18,6 +18,11 @@ export default defineConfig({
   plugins: [TanStackRouterVite(), react()],
   test: {
     environment: "happy-dom",
+    environmentOptions: {
+      happyDOM: {
+        url: "http://padre-gino-tests.com",
+      },
+    },
     coverage: {
       reporter: ["text", "json", "html"],
     },
