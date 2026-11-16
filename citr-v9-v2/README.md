@@ -75,3 +75,5 @@ Course guide: https://react-v9.holt.courses
         - Testing use hooks
         - Snapshot testing; Low confidence and not highly recommended.
         - How to generate a test coverage report.
+        - vitest UI
+        - vitest VS code extension
