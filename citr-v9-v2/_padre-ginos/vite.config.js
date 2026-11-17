@@ -25,21 +25,29 @@ export default defineConfig({
       {
         test: {
           name: "happy-dom",
+          include: ["**/node/*.test.{js,jsx}"],
           environment: "happy-dom",
           environmentOptions: {
             happyDOM: { url: "http://padre-gino-tests.com" },
           },
-          include: ["**/node/*.test.{js,jsx}"],
+        },
+        coverage: {
+          provider: "v8", // Use 'istanbul' for Firefox/WebKit
+          include: ["src/**/*.{ts,tsx}"],
         },
       },
       {
         test: {
-          include: ["**/browser/*.test.{js,jsx}"],
           name: "browser",
+          include: ["**/browser/*.test.{js,jsx}"],
           browser: {
             enabled: true,
             provider: playwright(),
             instances: [{ browser: "chromium" }],
+          },
+          coverage: {
+            provider: "v8", // Use 'istanbul' for Firefox/WebKit
+            include: ["src/**/*.{ts,tsx}"],
           },
         },
       },
