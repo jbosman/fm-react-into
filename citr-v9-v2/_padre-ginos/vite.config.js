@@ -19,7 +19,9 @@ export default defineConfig({
   plugins: [TanStackRouterVite(), react()],
   test: {
     coverage: {
+      provider: "v8", // Use 'istanbul' for Firefox/WebKit
       reporter: ["text", "json", "html"],
+      include: ["src/**/*.{js,jsx}"],
     },
     projects: [
       {
@@ -31,10 +33,6 @@ export default defineConfig({
             happyDOM: { url: "http://padre-gino-tests.com" },
           },
         },
-        coverage: {
-          provider: "v8", // Use 'istanbul' for Firefox/WebKit
-          include: ["src/**/*.{ts,tsx}"],
-        },
       },
       {
         test: {
@@ -44,10 +42,6 @@ export default defineConfig({
             enabled: true,
             provider: playwright(),
             instances: [{ browser: "chromium" }],
-          },
-          coverage: {
-            provider: "v8", // Use 'istanbul' for Firefox/WebKit
-            include: ["src/**/*.{ts,tsx}"],
           },
         },
       },
