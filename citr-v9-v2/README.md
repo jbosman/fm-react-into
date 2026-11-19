@@ -77,3 +77,4 @@ Course guide: https://react-v9.holt.courses
         - How to generate a test coverage report.
         - vitest UI
         - vitest VS code extension
+    - 15 - React 19
