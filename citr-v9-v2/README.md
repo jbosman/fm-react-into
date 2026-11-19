@@ -81,3 +81,4 @@ Course guide: https://react-v9.holt.courses
         - Form actions
         - useFormStatus (react-dom)
         - use & suspense
+        - React compiler

@@ -16,7 +16,14 @@ export default defineConfig({
       },
     },
   },
-  plugins: [TanStackRouterVite(), react()],
+  plugins: [
+    TanStackRouterVite(),
+    react({
+      babel: {
+        plugins: ["babel-plugin-react-compiler"],
+      },
+    }),
+  ],
   test: {
     coverage: {
       provider: "v8", // Use 'istanbul' for Firefox/WebKit
